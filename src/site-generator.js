@@ -7,7 +7,7 @@ const path = require('path');
 (async () => {
     const {stdout: tagString} = await exec("git tag");
     const revs = tagString.trim().split("\n");
-    revs.push("HEAD");
+    revs.push("main");
     for (let i = 0; i < revs.length; i++) {
         const rev = revs[i];
         await exec(`git checkout ${rev}`); // Hello shell injection
