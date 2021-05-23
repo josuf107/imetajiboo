@@ -16,7 +16,7 @@ const path = require('path');
             const data = await fs.readFile(`entries/${entry}`, 'utf8');
             const html = md(data);
             let directory;
-            if (rev == "HEAD") {
+            if (rev == "main") {
                 directory = 'entries';
             } else {
                 directory = `history/${rev}`;

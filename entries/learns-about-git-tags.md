@@ -213,7 +213,7 @@ much! Here's the final result:
     (async () => {
         const {stdout: tagString} = await exec("git tag");
         const revs = tagString.trim().split("\n");
-        revs.push("HEAD");
+        revs.push("main");
         for (let i = 0; i < revs.length; i++) {
             const rev = revs[i];
             await exec(`git checkout ${rev}`); // Hello shell injection
@@ -222,7 +222,7 @@ much! Here's the final result:
                 const data = await fs.readFile(`entries/${entry}`, 'utf8');
                 const html = md(data);
                 let directory;
-                if (rev == "HEAD") {
+                if (rev == "main") {
                     directory = 'entries';
                 } else {
                     directory = `history/${rev}`;
