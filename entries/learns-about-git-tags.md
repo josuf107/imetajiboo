@@ -193,14 +193,15 @@ time.
 
 Okay this took a couple of tries. First off apparently `Array` is not
 iterable which seems annoying. I used a classic `for` loop in this case.
-Secondly, in Java you can declare a final variable and then assign it
-later in e. g. an if statement as long as it always gets assigned. But
-Javascript can't do that, I guess because it's interpreted it's not
-possible to know that the `const` is only assigned once, so I learned
-about `let` from [stack overflow][let]. Besides that, just fair warning
-don't try this at home. It's a pretty insane idea to have the code under
-source control iterate through the git history. But we're learning so
-much! Here's the final result:
+(Update: I'm not sure what went wrong here, but `Array` can definitely
+be used in a `for...of` loop). Secondly, in Java you can declare a final
+variable and then assign it later in e. g. an if statement as long as it
+always gets assigned. But Javascript can't do that, I guess because it's
+interpreted it's not possible to know that the `const` is only assigned
+once, so I learned about `let` from [stack overflow][let]. Besides that,
+just fair warning don't try this at home. It's a pretty insane idea to
+have the code under source control iterate through the git history. But
+we're learning so much! Here's the final result:
 
 [let]: https://stackoverflow.com/questions/40877053/use-if-else-to-declare
 
