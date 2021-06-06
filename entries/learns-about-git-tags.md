@@ -233,3 +233,7 @@ much! Here's the final result:
             }
         }
     })();
+
+And we have a generated blog, with some fancy history as well. More
+importantly, we learned about a popular programming language. Can't wait
+to see where we will go next!
