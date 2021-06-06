@@ -133,7 +133,7 @@ that has an `exec` method that takes a callback on stdout I could use to
 get all the git tags. I should also be able to manage checkout as well.
 I was thinking that it's a bit lame that it takes a callback, but the
 docs mention you can use `util.promisfy` to transform the callback
-version into a callback version. In fact, it turns out `util.promisfy`
+version into a promise version. In fact, it turns out `util.promisfy`
 will turn *any* function that takes a callback into one that returns a
 promise, and the function may optionally specify a promise
 implementation because apparently functions, like arrays, can have
